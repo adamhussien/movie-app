@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+   
+text-transform: capitalize;
+}
+
+body{
+    background-color:#1F2544 ;
+}
+
+.container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   padding-top: 3rem;
+  margin: 0 auto;
+}
+.container .movie-card{
+max-width: 20rem;
+height: auto;
+background-color: #070F2B;
+border-radius: .6rem;
+position: relative;
+overflow: hidden;
+
+}
+
+.movie-card img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.dis1, .dis2{
+margin: 0.8rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1.2;
+}
+.movie-title, .movie-release-date{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.movie-overview, .movie-popularity{
+    font-size: 1.3rem;
+    color: #fff;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+.header .inputField  {
+   padding: 1rem 7rem;
+   border-radius: 1rem;
+   outline: none;
+   background-color: transparent;
+   border: 1px solid #070F2B;
+   cursor: pointer;
+   transition: all .8 ease-in-out;
+}
+
+.inputField>placeholder{
+    text-align: start;
+}
+.search-btn{
+    padding: .7rem 1.8rem;
+    border-radius: .8rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.2rem;
+}
+.movie-overview{
+   background-color: rgba(0, 0, 0, 0.631);
+   color: #fff;
+   position: absolute;
+   left: 0;
+   right: 0;
+ top: 0;
+ bottom: 0;
+ padding: 1rem;
+  width: 100%;
+  transform: translatex(-600px);
+ transition: all ease-in-out 1s;
+ text-align: center;
+}
+.movie-card:hover .movie-overview{
+    transform: translatex(0);
+}
+@media screen and (max-width: 30rem){
+    .form{
+        display: flex;
+    }
+
+}
+
+
+
+
+
